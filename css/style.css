@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+   
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    background-color: #EFEFEF;
+
+}
+.cabeçalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px 2px #526d545d;
+}
+.logo-img{
+    height: 70px;
+    margin-left: 40px; 
+    margin-top:20px;
+}
+.menu{
+    display: none;
+}
+.botao-menu, #botao{
+    display: none;
+}
+
+#botao2, .botao-grande{
+    display: block;
+}
+
+.botao-grande{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 20px;
+    list-style: none;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: none;
+    color: #0f868a;
+    transition: 0.5s ease-in-out;
+}
+.botao-grande:hover{
+    color: #2d3b2e;
+    transform: scale(1.08);
+}
+
+.title{
+    display: block;
+    margin: 0 auto;
+    color:#133559; 
+    width: 80vw;
+    text-align: center;
+    
+}
+.title h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 1px 0px 3px 2px #1a1f1a9f;
+}
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+
+}
+.slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.card{
+    border-radius: 25px;
+    background-color: #FFF;    
+}
+ 
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.card-img{
+    height: 250px; 
+    background: #133559;
+   
+ 
+}
+.servicos-img{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.name{
+    font-family:  'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color:#133559;
+    padding: 10px;
+    
+}
+
+.descricao{
+    margin-top: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    color:#0c2541;
+}
+
+.button{
+    border:none;
+    font-size: 16px;
+    color:#FFF;
+    padding: 8px 16px;
+    background-color: #588325;
+    border-radius: 6px;
+    margin: 14px;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+
+.button a{
+    text-decoration: none;
+    color:#FFF;
+}
+
+.button:hover{
+    background-color: #154344;
+    transform:scale(1.1);
+}
+
+footer{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient( to bottom, #0f868a, #207477);
+    box-shadow: 0px 0px px 0px rgba(34, 32, 32, 0.178);
+    color: #EFEFEF;
+    width: 100vw;
+    height: 15vh;
+}
+.contato{
+    padding-top: 10px;
+  
+}
+.contato a{
+    text-decoration: none;
+    color: #FFF;
+}
+.img-contato{
+    height: 30px;
+}
+
+@media (min-width: 360px) and (max-width: 700px){
+
+        .cabeçalho{
+            background-color: #0f868a;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 0px 3px 2px #526d545d;
+            width:100vw;
+            height: 15vh;
+        }
+        .menu{
+            height: 35px;
+            margin-top: 0.5px;
+            display: flex;
+            margin: auto;  
+        }
+    
+        .logo-img{
+            height: 65px;
+            position:absolute;
+            left: 10px;
+            top: 5px;
+           
+        }
+
+        .menu{
+            filter:invert(1);
+        }
+        .botao{
+            width: 100vw;
+            height: 10vh;
+            display: block;
+            text-align: center;
+            align-items: center;
+            margin-top: 20px;
+            list-style: none;
+            background-color:#0f868a;
+        }
+        
+        .botao-menu{
+            display:block;
+            line-height: 30px;
+            font-family: 'League Spartan', sans-serif;
+            font-weight: 600;
+            font-size: 1.5em;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.5s ease-in-out;
+
+        }
+        .botao-menu:hover{
+            color: #314132;
+            transform: scale(1.1);
+        }
+
+
+        #botao2{
+            display: none;
+        }
+       
+        .contato, .endereco{
+            width: 80vw;
+        }
+  
+}
