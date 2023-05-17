@@ -9,7 +9,28 @@
     <title>Campanha Imunidade</title>
 </head>
 <body>
+    <header class="cabeçalho">
+        <div><img class="logo-img" src="imagens/logo.png" alt="logo loja empório natur's"></div>
+        <div><img class="menu" onclick="clickMenu()" src="imagens/menu-aberto.png" alt="menu"></div>
+
+        <nav id="botao">
+            <ul class="botao">
+                <li><a class="botao-menu" href="">Serviços</a></li>
+                <li><a class="botao-menu" href="">Quem sou?</a></li>
+            </ul>
+        </nav>
+        <!--menu para telas maiores-->
+        <nav id="botao2">
+            <ul class="botao-grande">
+                <li><a class="botao-grande" href="">Serviços</a></li>
+                <li><a class="botao-grande" href="">Quem Sou?</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
     <main class="slide-container swiper">
+        <h1 class="title">Conheça a nossa linha completa de produtos para cuidar da sua imunidade</h1>
         <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
                 <div id="propolis" class="card swiper-slide">
@@ -67,22 +88,30 @@
              
                 </div>
                 <div id="alergipro" class="card swiper-slide">
-
                     <div class="card-img">
-                       <img class="servicos-img" src="imagens/oleo_de_alho.png" alt="imagem do alho de óleo em cápsulas">
+                       <img class="servicos-img" src="imagens/alergipro.png" alt="imagem do produto alergipro">
                     </div>
-
                    <div class="card-content">
-                       <h2 class="name">Óleo de Alho</h2>
-                       <p class="descricao">O <strong>Óleo de Alho desodorizado</strong> possui propriedades antioxidantes e anti-inflamatórias, podendo aliviar sintomas de gripes e resfriados, também possui ação expectorante.</p>
-                       <p class="descricao">O óleo de alho aumenta a imunidade, fortalece o sistema cardiovascular, além de contribuir para o bom funcionamento dos rins.</p>
-                       <p class="descricao"><strong>Indicação:</strong> 4 cápsulas ao dia.</p>
-                     
+                       <h2 class="name">AlergiPro</h2>
+                       <p class="descricao">O <strong>Alergipro</strong> pAge como coadjuvante na correção de quadros de alergias. Serve para tratar de alergias digestivas, respiratórias e da pele.</p>
+                       <p class="descricao"><strong>Indicação:</strong> 10 borrifadas, 3x ao dia.</p>
+    
                        <button class="button"><a href="https://api.whatsapp.com/send?phone=554891451940&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20para%20Imunidade%20:)">saiba mais</a></button>
                    </div>
-             
-             
+    
+    
                 </div>
+                <div id="especifico" class="card swiper-slide">
+                    <div class="card-img">
+                       <img class="servicos-img" src="imagens/especifico.png" alt="imagem do xarope específico">
+                    </div>
+                   <div class="card-content">
+                       <h2 class="name">Xarope Específico</h2>
+                       <p class="descricao">O <strong>Xarope Específico</strong> alivia sintomas gripais e dores na garganta. Também alivia tosses por seu efeito espectorante. É um produto 100% natural.</p>
+                       <p class="descricao"><strong>Indicação:</strong>2colheres de sopa ao dia.</p>
+    
+                       <button class="button"><a href="https://api.whatsapp.com/send?phone=554891451940&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20para%20Imunidade%20:)">saiba mais</a></button>
+                   </div>
           
           
           
@@ -93,8 +122,47 @@
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>              
+      <div class="swiper-pagination"></div>  
+      
     </main>
+    <footer>
+        <h3>Formas de Pagamentos:</h3>
+        <div class="forma-pagamentos">
+            <div class="pag">
+                <img class="pag-img" src="imagens/pix.png" alt="símbolo do pix">
+                <p>Pix</p>
+            </div>
+            <div class="pag">
+                <img class="pag-img"  src="imagens/cartao.png" alt="símbolo do cartão">
+                <p>Débito/Crédito</p>
+            </div>
+            <div class="pag">
+                <img class="pag-img"  src="imagens/dinheiro.png" alt="símbolo do dinheiro">
+                <p>Dinheiro</p>
+            </div>
+          </div>
+          <div class="horario">
+              <h4>Empório Natur's - Loja de Produtos Naturais</h4>
+              <p><strong>
+                Horários:
+              </strong></p>
+              <p><strong>
+               Seg-Sex:
+              </strong> 08:00 - 12:00h | 13:30 - 18:00h</p>
+              <p><strong>
+                Sábado:
+               </strong> 08:00 - 12:00h</p>
+          </div>
+          <div class="contato">
+            <a href="https://api.whatsapp.com/send?phone=554896953104&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os"><img class="img-contato"src="imagens/whatsapp.png" alt="imagem clicável whatsapp"></a>
+            <p>(48) 9145-1940</p>
+        </div>
+        <div class="endereco">
+            <h4>Endereço:</h4>
+            <p> Rua Adão Bosa, N°30, Centro, Cocal do Sul-SC  <a href="https://goo.gl/maps/Q3ysVzpRggvYwt5p8">ir para o Google Maps</a></p>
+        </div>
+       
+    </footer>
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>

@@ -1,3 +1,10 @@
+function clickMenu(){
+  if (botao.style.display == 'block'){
+      botao.style.display = 'none'
+  }else{
+      botao.style.display = 'block'
+  }
+}
 
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
